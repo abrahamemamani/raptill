@@ -1,0 +1,86 @@
+// ### Variables a utilizar ###
+
+// Breakpoints
+$small  : 576px;
+$medium : 768px;
+$large  : 992px;
+$xlarge : 1200px;
+
+:root{
+    --red         : #F44336,
+    --pink        : #E91E63,
+    --purple      : #9C27B0,
+    --deeppurple  : #673ab7,
+    --indigo      : #3f51b5,
+    --blue        : #2196f3,
+    --lightblue   : #03a9f4,
+    --cyan        : #00bcd4,
+    --teal        : #009688,
+    --green       : #4caf50,
+    --lightgreen  : #8bc34a,
+    --lime        : #cddc39,
+    --yellow      : #FBCF14,
+    --amber       : #ffc107,
+    --orange      : #ff9800,
+    --deeporange  : #ff5722,
+    --brown       : #795548,
+    --grey        : #9D9D9D,
+    --bluegrey    : #607d8b,
+    --asphalt     : #33495F,
+    --alizarin    : #E94B35,
+    --nightblue   : #2B3E51,
+    --silver      : #BDC3C7,
+    --emerald     : #1FCE6D,
+    --facebook    : #3B5998,
+    --twitter     : #1DA1F2,
+    --pinterest   : #BD081C,
+    --gplus       : #DC473A,
+    --instagram   : #DF3A65,
+    --vimeo       : #1AB7EA,
+    --udemy       : #EA5252,
+    --black       : #000,
+    --white       : #fff,
+    --transparent : transparent
+}
+
+//Variables de colores
+$colors : (
+    red         : #F44336,
+    pink        : #E91E63,
+    purple      : #9C27B0,
+    deeppurple  : #673ab7,
+    indigo      : #3f51b5,
+    blue        : #2196f3,
+    lightblue   : #03a9f4,
+    cyan        : #00bcd4,
+    teal        : #009688,
+    green       : #4caf50,
+    lightgreen  : #8bc34a,
+    lime        : #cddc39,
+    yellow      : #FBCF14,
+    amber       : #ffc107,
+    orange      : #ff9800,
+    deeporange  : #ff5722,
+    brown       : #795548,
+    grey        : #9D9D9D,
+    bluegrey    : #607d8b,
+    asphalt     : #33495F,
+    alizarin    : #E94B35,
+    nightblue   : #2B3E51,
+    silver      : #BDC3C7,
+    emerald     : #1FCE6D,
+    facebook    : #3B5998,
+    twitter     : #1DA1F2,
+    pinterest   : #BD081C,
+    gplus       : #DC473A,
+    instagram   : #DF3A65,
+    vimeo       : #1AB7EA,
+    udemy       : #EA5252
+);
+
+// Colors white, black, transparent
+$bwt : (
+    black : #000,
+    white : #fff,
+    transparent : transparent
+);

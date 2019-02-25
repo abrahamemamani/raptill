@@ -1,0 +1,155 @@
+// ### Componentes reutilizables (individuales) ###
+
+/*
+a{
+    color: #377DFF;
+}
+*/
+// %btn:not([href]){
+//     color: #fff;
+// }
+// [class*="btn"]::selection([href]){
+//     &:hover{
+//         color: #DDDDDD;
+//     }
+// }
+
+[class*="btn-block"]{
+    width: 100%;
+}
+[class*="btn-long"]{
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+
+%btn{
+    font-weight: 300;
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    user-select: none;
+    color: #fff;
+    background-color: #DDDDDD;
+    &:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+%btn.disabled, %btn:disabled{
+    opacity: .65;
+    cursor: not-allowed;
+}
+%btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-default, .btn-block-default, .btn-long-default,
+.btn-curve, .btn-block-curve, .btn-long-curve,
+.btn-sheet, .btn-block-sheet, .btn-long-sheet,
+.btn-outline, .btn-block-outline, .btn-long-outline{
+    @extend %btn;
+}
+.btn-default, .btn-block-default, .btn-long-default{
+    border-radius: .25rem;
+    &.small{
+        padding: .1rem .5rem;
+        font-size: .9rem;
+    }
+    &.large{
+        padding: .5rem 1.7rem;
+        font-size: 1.09rem;
+    }
+}
+.btn-curve, .btn-block-curve, .btn-long-curve{
+    padding: .4rem 1.2rem;
+    border-radius: 1.5rem;
+    &.small{
+        padding: .17rem .9rem;
+        font-size: .9rem;
+    }
+    &.large{
+        padding: .6rem 1.75rem;
+        font-size: 1.09rem;
+    }
+}
+.btn-sheet, .btn-block-sheet, .btn-long-sheet{
+    border-radius: 0;
+    &.small{
+        padding: .1rem .5rem;
+        font-size: .9rem;
+    }
+    &.large{
+        padding: .5rem 1.7rem;
+        font-size: 1.09rem;
+    }
+}
+.btn-outline, .btn-block-outline, .btn-long-outline{
+    border-radius: .25rem;
+    &.small{
+        padding: .1rem .5rem;
+        font-size: .9rem;
+    }
+    &.large{
+        padding: .5rem 1.7rem;
+        font-size: 1.09rem;
+    }
+}
+
+// @each $color, $value in $colors{
+//     .bt-#{$color}:not(.btn-outline):not(.btn-block-outline){
+//         background-color: $value !important;
+//         &.fx-default-hover{
+//             &:hover{
+//                 background-color: darken($value, 10%) !important;
+//             }
+//         }
+//     }
+//     .bt-#{$color}{
+//         &.fx-moveup-hover{
+//             transition: all 0.2s ease-in-out;
+//             &:hover{
+//                 box-shadow: 0 4px 11px rgba($value, 0.35);
+//                 transform: translateY(-3px);
+//             }
+//         }
+//         &.btn-outline, &.btn-block-outline{
+//             border-color: $value;
+//             color: $value;
+//             background-color: transparent;
+//         }
+//     }
+//     @for $i from 1 through 5{
+//         .bt-#{$color}.bt-darken-#{$i}:not(.btn-outline):not(.btn-block-outline){
+//             background-color: darken( $value, $i * 6% ) !important;
+//             &.fx-moveup-hover{
+//                 transition: all 0.2s ease-in-out;
+//                 &:hover{
+//                     box-shadow: 0 4px 11px rgba($value, 0.35);
+//                     transform: translateY(-3px);
+//                 }
+//             }
+//             &.fx-default-hover{
+//                 &:hover{
+//                     background-color: darken(darken( $value, $i * 6% ), 6%) !important;
+//                 }
+//             }
+//         }
+//     }
+// }
+// @each $color, $value in $bwt{
+//     .bt-#{$color}:not(.btn-outline):not(.btn-block-outline){
+//         background-color: $value !important;
+//     }
+//     .bt-#{$color}{
+//         &.btn-outline, &.btn-block-outline{
+//             border-color: $value;
+//             color: $value;
+//             background-color: transparent;
+//         }
+//     }
+// }
